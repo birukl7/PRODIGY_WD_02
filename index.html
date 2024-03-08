@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script defer src="https://kit.fontawesome.com/ee4b6626a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="
+        background-image: url('./public/images/sunset.jpg'); 
+        " class="m-0 p-0 bg-cover bg-fixed bg-center text-slate-50 flex justify-center items-center flex-col h-screen ">
+    <div class="max-w-screen-xl my-0 mx-auto px-6 bg-transparent backdrop-blur-3xl py-8 w-80" id="container">
+        <h1 class="text-5xl font-semibold text-center" id="display">00:00:00:00</h1>
+        <div class="flex  items-center mt-9">
+            <button class="font-bolder outline outline-1 px-6 py-0 flex-grow-0 text-xl rounded-lg h-12 mr-8 ml-2 invisible" id="lap">Lap</button>
+            <button class="bg-red-600 p-3 px-5 rounded-full w-16" id="start"><i class="fa-solid fa-play text-2xl" id="play-pause"></i></button>
+            <button class="ml-10 invisible" id="reset"><i class="fa-solid fa-arrow-rotate-right text-2xl "></i></button>
+        </div>
+        <div class="flex flex-col justify-start gap-3 mt-5 text-xl pl-5  py-3 rounded-lg" id="lap-container">
+            <!-- <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div>
+            <div><span class="mr-4">#1</span><span>00:00:00:00</span></div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
