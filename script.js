@@ -26,10 +26,13 @@ lapBtn.addEventListener('click',()=>{
     updateLap()
 })
 
+
+/**
+ * 
+ * Main funciton that update the lap
+ */
 const updateLap = ()=>{
     if(!lapStart) return;
-
-
     if(mainConatiner.offsetHeight >= document.body.offsetHeight){
         document.body.classList.remove('h-screen')
     }
@@ -80,6 +83,10 @@ resetBtn.addEventListener('click', ()=>{
     playPause.classList.add('fa-play')
 })
 
+
+/**
+ * Some neccessary functions
+ */
 function start(){
     startTime = Date.now() - elapsedTime;
     timer = setInterval(update, 10);
@@ -117,7 +124,6 @@ function update(){
     minutes = String(minutes).padStart(2, "0");
     seconds = String(seconds).padStart(2, "0");
     milliseconds = String(milliseconds).padStart(2, "0");
-
     display.innerHTML = `${hours}:${minutes}:${seconds}:${milliseconds}`;
    
 }
